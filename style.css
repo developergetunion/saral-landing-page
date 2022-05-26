@@ -1,14 +1,36 @@
 /* @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"); */
 
 .grid {
-  position: absolute; 
-  display: grid; 
+  position: absolute;
+  display: grid;
   grid-template-columns: repeat(30, 50px);
   grid-template-rows: repeat(60, 25px);
   gap: 10px 0px;
 }
 
-.item-1{
+.item-1 {
+  z-index: 1;
+  float: right;
+  /* width: 50; */
+}
+.item-2 {
+  z-index: 1;
+  float: right;
+}
+.item-3 {
+  z-index: 1;
+  float: right;
+}
+.item-4 {
+  z-index: 1;
+  float: right;
+}
+.item-5 {
+  z-index: 1;
+  float: right;
+}
+
+/* .item-1{
   z-index: 1;
   grid-column-start: 21;
   grid-column-end: 21;
@@ -42,18 +64,18 @@
   grid-column-end: 18;
   grid-row-start: 17;
   grid-row-end: 17;
-}
+} */
 
 html body {
   font-family: "Poppins", sans-serif;
 }
 
-a {
+.btn a {
   text-decoration: none !important;
   color: #ffffff !important;
 }
 
-a:hover {
+.btn a:hover {
   color: white;
   text-decoration: none !important;
   cursor: pointer;
@@ -98,8 +120,22 @@ a:hover {
   background: #252d6e;
   border-radius: 300px;
 }
+  .circle-2 {
+    position: absolute;
+    width: 550px;
+    height: 550px;
+    /* margin-top: 5vh; */
+    right: 50px;
+    /* left: 973px; */
+    top: 40vh;
+    /* background: #252d6e; */
+    /* border-radius: 300px; */
+  }
 
 .circle-img {
+  clip-path: circle(50%);
+}
+.circle-img-2 {
   clip-path: circle(50%);
 }
 
@@ -341,11 +377,11 @@ a:hover {
   font-size: 20px;
 }
 
-.shrink .navbar {
+/* .shrink .navbar {
   color: #fafafa;
   background: #00c6ff;
   background: linear-gradient(35deg, #00c6ff 10%, #0072ff 90%);
-}
+} */
 
 .card-head {
   font-size: 23px;
@@ -355,4 +391,63 @@ a:hover {
 
 .center-h {
   margin: 0 auto !important;
+}
+
+@media screen and (max-width: 800px) {
+  /* img{
+    width: 50%;
+    height: auto;
+  } */
+
+
+  .hero-text {
+    padding-top: 20vh !important;
+  }
+
+  .hero-head {
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  .hero-sub-text {
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .hero-sub-text-2 {
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .img-hero {
+    /* position: absolute; */
+    top: 0%;
+    right: 0%!important;
+    height: 30% !important;
+    width: 30% !important;
+    float: right;
+  }
+  .circle-2 {
+    /* position: absolute; */
+    /* width: 550px; */
+    /* height: 550px; */
+    /* margin-top: 5vh; */
+    /* top: 0%; */
+    padding: 0!important;
+
+
+    right: 0!important;
+    margin: 0!important;
+    /* left: 973px; */
+    /* top: 40vh; */
+    /* background: #252d6e; */
+    /* border-radius: 300px; */
+  }
+
+  .btn-main {
+    font-size: 15px !important;
+    color: #fafafa !important;
+    padding: 8px 20px 8px 20px !important;
+  }
+  
 }
