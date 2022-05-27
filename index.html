@@ -23,12 +23,18 @@
       crossorigin="anonymous"
     />
 
+  
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css"
       integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w=="
       crossorigin="anonymous"
     />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
@@ -42,6 +48,30 @@
       integrity="sha512-OvBgP9A2JBgiRad/mM36mkzXSXaJE9BEIENnVEmeZdITvwT09xnxLtT4twkCa8m/loMbPHsvPl0T8lRGVBwjlQ=="
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>$(document).ready(function(){
+      $(".owl-carousel").owlCarousel(
+        {    center: true,
+      items:2,
+      // loop:true,
+      margin:10,
+      responsive:{
+          600:{
+              items:4
+          }
+      }}
+      );
+    });</script>
+
+      <!-- <script>
+        $("#btn-nav-why").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#section-why").offset().top
+      }, 2000);
+  });
+      </script> -->
+    
     <title>Saral</title>
   </head>
 
@@ -50,7 +80,7 @@
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="">
-            <img src="./logo.png" width="70" height="70" alt="" />
+            <img src="./assets/logo.png" width="70" height="70" alt="" />
           </a>
           <button
             class="navbar-toggler"
@@ -66,16 +96,16 @@
           <div class="collapse navbar-collapse" id="navbarMain">
             <ul class="navbar-nav center-h mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link active" href="#section-home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Why</a>
+                <a class="nav-link" id="btn-nav-why" href="#section-why">Why</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Testimonial</a>
+                <a class="nav-link" href="#section-testimonial">Testimonial</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="#section-contact">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -83,7 +113,7 @@
       </nav>
       <!-- Hero -->
 
-      <div class="row hero section">
+      <div id="section-home" class="row hero section ">
         <div class="col-8 col-lg-6 col-md-6 col-sm-6">
           <div class="hero-text">
             <h3 class="bold hero-head">
@@ -125,44 +155,44 @@
         <!-- <div style="" class="">
           <img
             class="item-1 animate__animated animate__pulse animate__delay-1s"
-            src="./product1.png"
+            src="./assets/product1.png"
             alt=""
           />
           <img
             class="item-2 animate__animated animate__pulse animate__delay-1s"
-            src="./product2.png"
+            src="./assets/product2.png"
             alt=""
           />
           <img
             class="item-3 animate__animated animate__pulse animate__delay-1s"
-            src="./product3.png"
+            src="./assets/product3.png"
             alt=""
           />
           <img
             class="item-4 animate__animated animate__pulse animate__delay-1s"
-            src="./product4.png"
+            src="./assets/product4.png"
             alt=""
           />
           <img
             class="item-5 animate__animated animate__pulse animate__delay-1s"
-            src="./product5.png"
+            src="./assets/product5.png"
             alt=""
           />
         </div> -->
 
         <!-- <div style=""class='grid'>
-          <img class="item-1 animate__animated animate__pulse animate__delay-1s	" src="./product1.png" alt="" />
-          <img class="item-2 animate__animated animate__pulse animate__delay-1s	" src="./product2.png" alt="" />
-          <img class="item-3 animate__animated animate__pulse animate__delay-1s	" src="./product3.png" alt="" />
-          <img class="item-4 animate__animated animate__pulse animate__delay-1s	" src="./product4.png" alt="" />
-          <img class="item-5 animate__animated animate__pulse animate__delay-1s	" src="./product5.png" alt="" />
+          <img class="item-1 animate__animated animate__pulse animate__delay-1s	" src="./assets/product1.png" alt="" />
+          <img class="item-2 animate__animated animate__pulse animate__delay-1s	" src="./assets/product2.png" alt="" />
+          <img class="item-3 animate__animated animate__pulse animate__delay-1s	" src="./assets/product3.png" alt="" />
+          <img class="item-4 animate__animated animate__pulse animate__delay-1s	" src="./assets/product4.png" alt="" />
+          <img class="item-5 animate__animated animate__pulse animate__delay-1s	" src="./assets/product5.png" alt="" />
         </div> -->
         <div class="col-4 col-lg-6 col-md-6 col-sm-6">
           <div class="circle-2">
             <img
               style="z-index: -100 !important"
               class="img-hero"
-              src="./Group 95.png"
+              src="./assets/Group 95.png"
               alt=""
             />
           </div>
@@ -170,7 +200,7 @@
           <!-- <div class="circle-blue">
             <img
               class="circle-img"
-              src="./Indian-women.png"
+              src="./assets/Indian-women.png"
               width="100%"
               height="100%"
               alt=""
@@ -182,8 +212,8 @@
       <div class="section-space-mobile"></div>
       <div class="row mt-5 section">
         <div class="col-6 content-image">
-          <img class="group-desktop" src="./prod_group2.png" alt="" />
-          <img class="group-mobile" src="./prod-group-mobile.png" alt="" />
+          <img class="group-desktop" src="./assets/prod_group2.png" alt="" />
+          <img class="group-mobile" src="./assets/prod-group-mobile.png" alt="" />
         </div>
         <div class="col-6 content-text">
           <div class="content-head making">
@@ -197,9 +227,9 @@
       </div>
       <!-- <div class="section-space-mobile"></div> -->
       <!-- <div class="section-space-mobile"></div> -->
-      <div class="section-space">
+      <div  id="section-why" class="section-space ">
         <div class="row">
-          <div class="col-4 testimonial-head mt-5">
+          <div  class="col-4 testimonial-head mt-5">
             <h4 class="content-head-text content-why blue">Why Saral?</h4>
           </div>
           <div class="col-1 line ml-1"></div>
@@ -221,7 +251,7 @@
 
 </div> -->
         <!-- <div class="card-block col-12">
-          <img class="card-img" src="./card-group.png" alt="" />
+          <img class="card-img" src="./assets/card-group.png" alt="" />
         </div> -->
         <div class="card-block row">
           <div class="col-6 p-1">
@@ -229,7 +259,7 @@
               <div
                 class="white-circle center-h bg-light d-flex justify-content-center align-items-center"
               >
-                <img class="card-img2" src="./carbon_delivery.png" alt="" />
+                <img class="card-img2" src="./assets/carbon_delivery.png" alt="" />
               </div>
               <div class="mt-4">
                 <h6 class="card-head">Logistic Support</h6>
@@ -249,7 +279,7 @@
               <div
                 class="white-circle center-h bg-light d-flex justify-content-center align-items-center"
               >
-                <img class="card-img2" src="./request_money.png" alt="" />
+                <img class="card-img2" src="./assets/request_money.png" alt="" />
               </div>
               <div class="mt-4">
                 <h6 class="card-head">Immediate Payment</h6>
@@ -269,7 +299,7 @@
               <div
                 class="white-circle center-h bg-light d-flex justify-content-center align-items-center"
               >
-                <img class="card-img2" src="./group.png" alt="" />
+                <img class="card-img2" src="./assets/group.png" alt="" />
               </div>
               <div class="mt-4">
                 <h6 class="card-head">Branding</h6>
@@ -290,7 +320,7 @@
               <div
                 class="white-circle center-h bg-light d-flex justify-content-center align-items-center"
               >
-                <img class="card-img2" src="./codicon_package.png" alt="" />
+                <img class="card-img2" src="./assets/codicon_package.png" alt="" />
               </div>
               <div class="mt-4">
                 <h6 class="card-head">Packaging Assistance</h6>
@@ -305,7 +335,7 @@
             </div>
           </div>
 
-          <!-- <img class="card-img" src="./card-group.png" alt="" /> -->
+          <!-- <img class="card-img" src="./assets/card-group.png" alt="" /> -->
         </div>
 </div>
 <div class="section-space-mobile"></div>
@@ -318,7 +348,7 @@
               >
                 <img
                   class=""
-                  src="./carbon_delivery.png"
+                  src="./assets/carbon_delivery.png"
                   width="65"
                   height="65"
                   alt=""
@@ -344,7 +374,7 @@
               >
                 <img
                   class=""
-                  src="./request_money.png"
+                  src="./assets/request_money.png"
                   width="65"
                   height="65"
                   alt=""
@@ -368,7 +398,7 @@
               <div
                 class="white-circle center-h bg-light d-flex justify-content-center align-items-center"
               >
-                <img class="" src="./group.png" width="65" height="65" alt="" />
+                <img class="" src="./assets/group.png" width="65" height="65" alt="" />
               </div>
               <div class="mt-4">
                 <h6 class="card-head">Branding</h6>
@@ -391,7 +421,7 @@
               >
                 <img
                   class=""
-                  src="./codicon_package.png"
+                  src="./assets/codicon_package.png"
                   width="65"
                   height="65"
                   alt=""
@@ -410,14 +440,13 @@
             </div>
           </div>
         </div>
-        <!-- </div> -->
       </div>
-      
+
       <div class="section-space-mobile">
 
         <div class="impact-mobile pt-5">
           <h2 class="impact-head-text-mobile text-center">Impact Created</h2>
-          <img class="impact-img-mobile" src="./impact-2.svg" alt="" />
+          <img class="impact-img-mobile" src="./assets/impact-2.svg" alt="" />
         </div>
       </div>
 
@@ -434,7 +463,7 @@
           >
             <img
               class="impact-img"
-              src="./impact_img.png"
+              src="./assets/Group 99 (1).svg"
               width="75%"
               height="auto"
               alt=""
@@ -457,7 +486,7 @@
               >
                 <img
                   class=""
-                  src="./customer_pic.png"
+                  src="./assets/customer_pic.png"
                   height="150"
                   width="150"
                   alt=""
@@ -466,7 +495,7 @@
               <div class="mt-4">
                 <h3 class="customer-name mt-5">Kartik Shukla</h3>
                 <div class="rating d-flex mt-2">
-                  <img class="center-h" src="./customer_rating.png" alt="" />
+                  <img class="center-h" src="./assets/customer_rating.png" alt="" />
                 </div>
                 <div class="d-flex text-center justify-content-center mt-2">
                   <h3 class="customer-head mt-3">Loved It...</h3>
@@ -484,7 +513,7 @@
         </div>
         <div class="row">
           <div class="col-md-4 p-5 footer-div">
-            <img class="footer-logo" src="./logo.png" alt="" />
+            <img class="footer-logo" src="./assets/logo.png" alt="" />
             <p class="contact-text mt-5">
               Contact us today and speak with one of our customer service
               representatives and make your experience with us that much more
@@ -537,13 +566,43 @@
         </div>
       </div> -->
 
+      <!-- <div class=""></div> -->
+
+    <div class="row">
+      <div class="col-12">  
+        <div class="team-sub text-center">meet</div>
+        <div class="team-head text-center mb-5">Our Team</div> 
+        <div class="team-img w-75 center-h mt-5">
+          <img class="" src="./assets/Group 103 (2).svg" width="100%" height="auto" alt="">
+        </div>
+        <div class="owl-carousel mobile-carousel mt-n5">
+          <div class="mx-3 carousel w-75"><img class="carousel-img" src="./assets/KamalAnandani 1.png" alt="">
+          <h6 class="text-center mt-3 carousel-title">Kamal Anandani</h6>
+        <p class="text-center carousel-sub-title">Co-Founder</p></div>
+          <div class="mx-3 carousel w-75"><img class="carousel-img" src="./assets/KamalAnandani 2.png" alt="">  <h6 class="text-center mt-3 carousel-title">Amitesh Sahu</h6>
+        <p class="text-center carousel-sub-title">Co-Founder</p></div>
+          <div class="mx-3 carousel w-75"><img class="carousel-img" src="./assets/KamalAnandani 3.png" alt="">  <h6 class="text-center mt-3 carousel-title">Prakash Verma</h6>
+        <p class="text-center carousel-sub-title">CMO</p></div>
+        
+          <div class="mx-3 carousel w-75"><img class="carousel-img" src="./assets/KamalAnandani 5.png" alt="">  <h6 class="text-center mt-3 carousel-title">Sunil Dudani</h6>
+        <p class="text-center carousel-sub-title">GM Sales - Western Region</p></div>
+        
+        <div class="mx-3 carousel w-75"><img class="carousel-img" src="./assets/KamalAnandani 4.png" alt="">  <h6 class="text-center mt-3 carousel-title">Rajesh Krishnani</h6>
+          <p class="text-center carousel-sub-title">GM Sales - Central Region</p></div>
+        
+        </div>
+      </div>
+    </div>
+
+
+
       <div class="mt-5">
         <!-- <div class="row mt-5"> -->
 
         <div class="row">
           <hr class="line-pc" />
-          <div class="col-md-4 px-5 footer-div">
-            <img class="footer-logo" src="./logo.png" alt="" />
+          <div id="section-contact" class="col-md-4 px-5 footer-div">
+            <img class="footer-logo" src="./assets/logo.png" alt="" />
             <p class="contact-text mt-5">
               Contact us today and speak with one of our customer service
               representatives and make your experience with us that much more
@@ -599,7 +658,7 @@
           <div style="margin-top: 200px;" class="footer-mobile w-100">
             <img
               class="footer-mobile "
-              src="./Group 104.png"
+              src="./assets/Group 104.png"
               width="100vw"
               alt=""
             />
@@ -611,7 +670,7 @@
             <div class="footer-mobile">
               <img
                 class="footer-mobile"
-                src="./Group 102.png"
+                src="./assets/Group 102.png"
                 width="100"
                 alt=""
               />
@@ -626,7 +685,7 @@
             <div class="footer-mobile">
               <img
                 class="footer-mobile"
-                src="./Group 85.png"
+                src="./assets/Group 85.png"
                 width="100"
                 alt=""
               />
@@ -637,14 +696,14 @@
 
       <!-- <div class="section-space-mobile"></div> -->
 
-      <div class="row">
+      <div id="section-contact" class="row">
         <div class="col-12">
   
           <div>
             <hr class="footer-line" />
             <img
               class="footer-mobile"
-              src="./Group 98.svg"
+              src="./assets/Group 98.svg"
               width="100"
               alt=""
             />
@@ -658,7 +717,7 @@
             <div class="footer-mobile text-center">
               <img
                 class="social-mobile"
-                src="./Component 19.png"
+                src="./assets/Component 19.png"
                 width="100"
                 alt=""
               />
@@ -697,6 +756,7 @@
       </div> -->
 
       <!-- </div> -->
+
     </div>
   </body>
 </html>
