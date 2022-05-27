@@ -46,46 +46,45 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="">
-          <img src="./logo.png" width="70" height="70" alt="" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarMain"
-          aria-controls="navbarMain"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarMain">
-          <ul class="navbar-nav center-h mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Why</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Testimonial</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
     <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="">
+            <img src="./logo.png" width="70" height="70" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMain"
+            aria-controls="navbarMain"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarMain">
+            <ul class="navbar-nav center-h mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Why</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Testimonial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
       <!-- Hero -->
 
-      <div class="row d-flex hero section">
-        <div class="col-md-6 col-sm-6 col-xs-6 col-lg-6">
+      <div class="row hero section">
+        <div class="col-8 col-lg-6 col-md-6 col-sm-6">
           <div class="hero-text">
             <h3 class="bold hero-head">
               <span class="blue">Enabling</span>
@@ -108,7 +107,7 @@
               <strong>Raipur</strong>
             </p>
           </div>
-          <div class="mt-5">
+          <div class="mt-5 btn-grp">
             <div class="btn btn-lg bg-blue btn-main">
               <i class="fa-solid fa-phone fa-lg"></i> Contact Us
             </div>
@@ -156,15 +155,14 @@
           <img class="item-4 animate__animated animate__pulse animate__delay-1s	" src="./product4.png" alt="" />
           <img class="item-5 animate__animated animate__pulse animate__delay-1s	" src="./product5.png" alt="" />
         </div> -->
-        <div class="col-md-6 col-sm-4 col-xs-4 col-lg-6 d-flex justify-content-end">
-          <div class="circle-2 ">
-        
-              <img
-                style="z-index: -1 !important"
-                class="img-fluid img-hero"
-                src="./hero-2.png"
-                alt=""
-              />
+        <div class="col-4 col-lg-6 col-md-6 col-sm-6">
+          <div class="circle-2">
+            <img
+              style="z-index: -100 !important"
+              class="img-hero"
+              src="./Group 95.png"
+              alt=""
+            />
           </div>
 
           <!-- <div class="circle-blue">
@@ -179,14 +177,15 @@
         </div>
       </div>
       <!-- Hero End -->
-      <div class="section-space"></div>
+      <!-- <div class="section-space"></div> -->
       <div class="row mt-5 section">
-        <div class="col-md-7 content-image">
-          <img src="./prod_group2.png" alt="" />
+        <div class="col-6 content-image">
+          <img class="group-desktop" src="./prod_group2.png" alt="" />
+          <img class="group-mobile" src="./prod-group-mobile.png" alt="" />
         </div>
-        <div class="col-md-5 content-text">
-          <div class="content-head px-5">
-            <h4 class="content-head-text blue mt-5">Making A Difference</h4>
+        <div class="col-6 content-text">
+          <div class="content-head making">
+            <h4 class="content-head-text blue">Making A Difference</h4>
             <p class="content-sub-text blue mt-4">
               Saral brings a ecosystem where homepreneurs can get assistance for
               selling their produce in nearby local markets.
@@ -194,14 +193,14 @@
           </div>
         </div>
       </div>
-      <!-- <div class="section-space"></div> -->
+      <div class="section-space"></div>
       <div class="section">
         <div class="row">
-          <div class="col-md-4 testimonial-head mt-5 px-5">
-            <h4 class="content-head-text blue">Why Saral?</h4>
+          <div class="col-4 testimonial-head mt-5">
+            <h4 class="content-head-text content-why blue">Why Saral?</h4>
           </div>
-          <div class="col-md-1 line ml-1"></div>
-          <div class="col-md-7 testimonial-sub">
+          <div class="col-1 line ml-1"></div>
+          <div class="col-7 testimonial-sub">
             <p class="content-sub-text blue">
               Saral is helping and encouraging home run businesses. Women doing
               home run businesses have noticed an increase in sales. Saral is
@@ -210,116 +209,121 @@
             </p>
           </div>
         </div>
-        <div class="m-5"></div>
+        <!-- <div class="section-space"></div> -->
 
-        <div class="container-fluid p-5">
-          <div class="row">
-            <div class="col-md-3">
-              <div class="card-testimonial p-4">
-                <div
-                  class="white-circle center-h bg-light d-flex justify-content-center align-items-center"
-                >
-                  <img
-                    class=""
-                    src="./carbon_delivery.png"
-                    width="65"
-                    height="65"
-                    alt=""
-                  />
-                </div>
-                <div class="mt-4">
-                  <h6 class="card-head">Logistic Support</h6>
-                </div>
-                <div class="line-white-h center-h"></div>
-                <div class="card-content">
-                  <p class="text-light card-text text-center mt-3">
-                    Saral takes care of all the delivery and logistics aspects
-                    of order fulfillment.
-                  </p>
-                </div>
+        <!-- <div class="container-fluid p-5 my-5"> -->
+        <!-- <div class="row">
+
+</div> -->
+        <div class="card-block col-12">
+          <img class="card-img" src="./card-group.png" alt="" />
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="card-testimonial p-4">
+              <div
+                class="white-circle center-h bg-light d-flex justify-content-center align-items-center"
+              >
+                <img
+                  class=""
+                  src="./carbon_delivery.png"
+                  width="65"
+                  height="65"
+                  alt=""
+                />
+              </div>
+              <div class="mt-4">
+                <h6 class="card-head">Logistic Support</h6>
+              </div>
+              <div class="line-white-h center-h"></div>
+              <div class="card-content">
+                <p class="text-light card-text text-center mt-3">
+                  Saral takes care of all the delivery and logistics aspects of
+                  order fulfillment.
+                </p>
               </div>
             </div>
+          </div>
 
-            <div class="col-md-3">
-              <div class="card-testimonial p-4">
-                <div
-                  class="white-circle center-h bg-light d-flex justify-content-center align-items-center"
-                >
-                  <img
-                    class=""
-                    src="./request_money.png"
-                    width="65"
-                    height="65"
-                    alt=""
-                  />
-                </div>
-                <div class="mt-4">
-                  <h6 class="card-head">Immediate Payment</h6>
-                </div>
-                <div class="line-white-h center-h"></div>
-                <div class="card-content">
-                  <p class="text-light card-text text-center mt-3">
-                    We make cash payment at the time of product reducing the
-                    hassle of deffered payments.
-                  </p>
-                </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card-testimonial p-4">
+              <div
+                class="white-circle center-h bg-light d-flex justify-content-center align-items-center"
+              >
+                <img
+                  class=""
+                  src="./request_money.png"
+                  width="65"
+                  height="65"
+                  alt=""
+                />
+              </div>
+              <div class="mt-4">
+                <h6 class="card-head">Immediate Payment</h6>
+              </div>
+              <div class="line-white-h center-h"></div>
+              <div class="card-content">
+                <p class="text-light card-text text-center mt-3">
+                  We make cash payment at the time of product reducing the
+                  hassle of deffered payments.
+                </p>
               </div>
             </div>
+          </div>
 
-            <div class="col-md-3">
-              <div class="card-testimonial p-4">
-                <div
-                  class="white-circle center-h bg-light d-flex justify-content-center align-items-center"
-                >
-                  <img
-                    class=""
-                    src="./group.png"
-                    width="65"
-                    height="65"
-                    alt=""
-                  />
-                </div>
-                <div class="mt-4">
-                  <h6 class="card-head">Branding</h6>
-                </div>
-                <div class="line-white-h center-h"></div>
-                <div class="card-content">
-                  <p class="text-light card-text text-center mt-3">
-                    Saral builds local market within a region and get orders on
-                    your behalf. We ensure that your entire communication
-                    details are shared with the products.
-                  </p>
-                </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card-testimonial p-4">
+              <div
+                class="white-circle center-h bg-light d-flex justify-content-center align-items-center"
+              >
+                <img class="" src="./group.png" width="65" height="65" alt="" />
+              </div>
+              <div class="mt-4">
+                <h6 class="card-head">Branding</h6>
+              </div>
+              <div class="line-white-h center-h"></div>
+              <div class="card-content">
+                <p class="text-light card-text text-center mt-3">
+                  Saral builds local market within a region and get orders on
+                  your behalf. We ensure that your entire communication details
+                  are shared with the products.
+                </p>
               </div>
             </div>
+          </div>
 
-            <div class="col-md-3">
-              <div class="card-testimonial p-4">
-                <div
-                  class="white-circle center-h bg-light d-flex justify-content-center align-items-center"
-                >
-                  <img
-                    class=""
-                    src="./codicon_package.png"
-                    width="65"
-                    height="65"
-                    alt=""
-                  />
-                </div>
-                <div class="mt-4">
-                  <h6 class="card-head">Packaging Assistance</h6>
-                </div>
-                <div class="line-white-h center-h"></div>
-                <div class="card-content">
-                  <p class="text-light card-text text-center mt-3">
-                    Helps in the providing/ improving packaging as per the
-                    market requirements for your products.
-                  </p>
-                </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="card-testimonial p-4">
+              <div
+                class="white-circle center-h bg-light d-flex justify-content-center align-items-center"
+              >
+                <img
+                  class=""
+                  src="./codicon_package.png"
+                  width="65"
+                  height="65"
+                  alt=""
+                />
+              </div>
+              <div class="mt-4">
+                <h6 class="card-head">Packaging Assistance</h6>
+              </div>
+              <div class="line-white-h center-h"></div>
+              <div class="card-content">
+                <p class="text-light card-text text-center mt-3">
+                  Helps in the providing/ improving packaging as per the market
+                  requirements for your products.
+                </p>
               </div>
             </div>
           </div>
         </div>
+        <!-- </div> -->
+      </div>
+
+      <div class="impact-mobile section">
+        <h2 class="impact-head-text-mobile text-center">Impact Created</h2>
+        <img class="impact-img-mobile" src="./impact-mobile.png" alt="" />
       </div>
 
       <div class="container-fluid p-5 section">
@@ -327,9 +331,9 @@
           <div class="impact text-center">
             <h2 class="impact-head-text">Impact Created</h2>
           </div>
-          <div class="mt-5 d-flex justify-content-center">
+          <div class="impact-img mt-5 d-flex justify-content-center">
             <img
-              class=""
+              class="impact-img"
               src="./impact_img.png"
               width="75%"
               height="auto"
@@ -347,7 +351,7 @@
               Why home run business runners like us?
             </h3>
           </div>
-          <div class="col-md-8">
+          <div class="col-md-8 customer">
             <div class="customer-review mt-5 d-flex justify-content-center">
               <div
                 class="white-circle-2 mb-5 d-flex justify-content-center align-items-center"
@@ -380,8 +384,8 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4 p-5">
-            <img src="./logo.png" width="60" height="auto" alt="" />
+          <div class="col-md-4 p-5 footer-div">
+            <img class="footer-logo" src="./logo.png" alt="" />
             <p class="contact-text mt-5">
               Contact us today and speak with one of our customer service
               representatives and make your experience with us that much more
@@ -394,7 +398,7 @@
               <i class="fa-brands blue fa-youtube fa-2x"></i>
             </div>
           </div>
-          <div class="col-md-8">
+          <div class="col-md-8 footer-div">
             <ul class="contact-ul mt-5">
               <li class="d-inline-flex justify-content-between">
                 &nbsp;
@@ -433,11 +437,67 @@
           </div>
         </div>
       </div>
+    
+          <div style="margin-top: 200px;" class="footer-mobile w-100">
+            <img
+              class="footer-mobile "
+              src="./Group 104.png"
+              width="100vw"
+              alt=""
+            />
+          </div>
 
-      <div class="section-space"></div>
+      <div class="row">
+        <!-- <div class="section-space"></div> -->
+        <div class="row">
+          <div class="col-12 my-3">
+            <div class="footer-mobile">
+              <img
+                class="footer-mobile"
+                src="./Group 102.png"
+                width="100"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <div class="row footer">
-        <div class="col-md-12 pt-5 pb-3">
+      <div class="row">
+        <!-- <div class="section-space"></div> -->
+        <div class="row">
+          <div class="col-12 my-4">
+            <div class="footer-mobile">
+              <img
+                class="footer-mobile"
+                src="./Group 85.png"
+                width="100"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- <div class="section-space"></div> -->
+        <div class="row">
+          <div class="col-12 my-4">
+            <div class="footer-mobile text-center">
+              <img
+                class="social-mobile"
+                src="./Component 19.png"
+                width="100"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row footer ">
+        <div class="col-md-12 mt-5 pt-2 pb-3">
           <h6 class="copyright-head pt-2">
             Copyright Fiducia Labs Pvt. Ltd. ©️2020 All rights reserved.
           </h6>
@@ -452,76 +512,5 @@
 
       <!-- </div> -->
     </div>
-    <script>
-      $(function () {
-        // wait for document ready
-        var flightpath = {
-          entry: {
-            curviness: 1.25,
-            autoRotate: true,
-            values: [
-              { x: 100, y: -20 },
-              { x: 300, y: 10 },
-            ],
-          },
-          looping: {
-            curviness: 1.25,
-            autoRotate: true,
-            values: [
-              { x: 510, y: 60 },
-              { x: 620, y: -60 },
-              { x: 500, y: -100 },
-              { x: 380, y: 20 },
-              { x: 500, y: 60 },
-              { x: 580, y: 20 },
-              { x: 620, y: 15 },
-            ],
-          },
-          leave: {
-            curviness: 1.25,
-            autoRotate: true,
-            values: [
-              { x: 660, y: 20 },
-              { x: 800, y: 130 },
-              { x: $(window).width() + 300, y: -100 },
-            ],
-          },
-        };
-        // init controller
-        var controller = new ScrollMagic.Controller();
-
-        // create tween
-        var tween = new TimelineMax()
-          .add(
-            TweenMax.to($("#plane"), 1.2, {
-              css: { bezier: flightpath.entry },
-              ease: Power1.easeInOut,
-            })
-          )
-          .add(
-            TweenMax.to($("#plane"), 2, {
-              css: { bezier: flightpath.looping },
-              ease: Power1.easeInOut,
-            })
-          )
-          .add(
-            TweenMax.to($("#plane"), 1, {
-              css: { bezier: flightpath.leave },
-              ease: Power1.easeInOut,
-            })
-          );
-
-        // build scene
-        var scene = new ScrollMagic.Scene({
-          triggerElement: "#trigger",
-          duration: 500,
-          offset: 100,
-        })
-          .setPin("#target")
-          .setTween(tween)
-          .addIndicators() // add indicators (requires plugin)
-          .addTo(controller);
-      });
-    </script>
   </body>
 </html>
